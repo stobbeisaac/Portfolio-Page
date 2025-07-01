@@ -1,10 +1,9 @@
 import './App.css'
-import image from '/IsaacImage.jpg'
 import { useState, useEffect } from 'react'
 
 function App() {
   const [currentPage, setCurrentPage] = useState(0);
-  const totalPages = 4;
+  const totalPages = 7; // Updated to include individual project pages
 
   const scrollToPage = (pageIndex) => {
     const element = document.getElementById(`page-${pageIndex}`);
@@ -74,7 +73,7 @@ function App() {
         <div className="container text-center">
           <div className="row">
             <div className="col">
-              <img src={image} alt="Isaac Stobbe" width={350} className="rounded-5 profile-image"></img>
+              <img src="/IsaacImage.jpg" alt="Isaac Stobbe" width={350} className="rounded-5 profile-image"></img>
               <h1 className="hidden-title"></h1>
             </div>
             <div className="col text-start align-self-center">
@@ -93,53 +92,54 @@ function App() {
               <h2 className="page-title">About Me</h2>
               <div className="content-card">
                 <p className="lead">
-                  Passionate software engineer with a fresh perspective and strong foundation 
-                  in computer science fundamentals.
+                  Hi, I'm Isaac - a recent Computer Science graduate from the University of Wisconsin - Stout with a strong interest in embedded systems, automation, and software development.
                 </p>
-                <p>
-                  Recent graduate from University of Wisconsin - Stout with expertise in 
-                  modern web technologies, problem-solving, and collaborative development.
-                </p>
+                {/* <p>
+                  
+                </p> */}
                 <div className="skills-grid">
+                  <span className="skill-tag">C++</span>
+                  <span className="skill-tag">Linux</span>
+                  <span className="skill-tag">Arduino</span>
                   <span className="skill-tag">JavaScript</span>
                   <span className="skill-tag">React</span>
-                  <span className="skill-tag">Python</span>
                   <span className="skill-tag">Java</span>
                   <span className="skill-tag">SQL</span>
                   <span className="skill-tag">Git</span>
                 </div>
+                <h2 className="resume-title"> Want to Download My Resume?</h2>
+                <a href="/IsaacStobbeResume2025.pdf" className="resume-link" download="IsaacStobbeResume2025.pdf">
+                  Download Resume
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Page 3 - Projects */}
+      {/* Page 3 - Projects Overview */}
       <section id="page-2" className="page-section">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-10 text-center">
+            <div className="col-md-8 text-center">
               <h2 className="page-title">My Projects</h2>
-              <div className="projects-grid">
-                <div className="project-card">
-                  <h4>Portfolio Website</h4>
-                  <p>Interactive portfolio built with React and modern CSS animations</p>
-                  <div className="project-tech">React • CSS • JavaScript</div>
-                </div>
-                <div className="project-card">
-                  <h4>Task Management App</h4>
-                  <p>Full-stack application for team task coordination</p>
-                  <div className="project-tech">Node.js • Express • MongoDB</div>
-                </div>
-                <div className="project-card">
-                  <h4>Data Visualization Tool</h4>
-                  <p>Interactive charts and graphs for business analytics</p>
-                  <div className="project-tech">Python • D3.js • Flask</div>
-                </div>
-                <div className="project-card">
-                  <h4></h4>
-                  <p>Interactive charts and graphs for business analytics</p>
-                  <div className="project-tech">Python • D3.js • Flask</div>
+              <div className="content-card">
+                <p className="lead">
+                  Here are some of the projects I've worked on. Use the navigation to explore each one in detail.
+                </p>
+                <div className="projects-overview">
+                  <div className="project-summary">
+                    <h4>Portfolio Website</h4>
+                    <p>Interactive portfolio built with React</p>
+                  </div>
+                  <div className="project-summary">
+                    <h4>Go-Kart Speedometer</h4>
+                    <p>Real-time speedometer for a go-kart using Arduino and sensors</p>
+                  </div>
+                  <div className="project-summary">
+                    <h4>Guitar Tuner</h4>
+                    <p>Real-time guitar tuner using Arduino and a microphone</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -147,8 +147,110 @@ function App() {
         </div>
       </section>
 
-      {/* Page 4 - Contact */}
-      <section id="page-3" className="page-section">
+      {/* Page 4 - Project 1: Portfolio Website */}
+      <section id="page-3" className="page-section project-page">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-10">
+              <h2 className="page-title">Portfolio Website</h2>
+              <div className="project-detail-card">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="project-image-placeholder">
+                      <img src="/ProjectPortfolio.png" alt="Portfolio Website Preview" className="project-image" />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="project-details">
+                      <h3>Interactive Portfolio Website</h3>
+                      <p className="project-description">
+                        A modern, responsive portfolio website built with React and featuring smooth scroll animations, 
+                        gradient text effects, and a professional design. The site showcases my skills and projects 
+                        with an intuitive navigation system.
+                      </p>
+                      <div className="project-tech">React • CSS • JavaScript • Vite</div>
+                      <div className="project-links">
+                        <a href="https://github.com/stobbeisaac/Portfolio-Page" className="project-link" target='_blank'>GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Page 5 - Project 2: Go-Kart Speedometer */}
+      <section id="page-4" className="page-section project-page">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-10">
+              <h2 className="page-title">Go-Kart Speedometer</h2>
+              <div className="project-detail-card">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="project-image-placeholder">
+                      <img src="/go-kart-speedometer-preview.jpg" alt="Go-Kart Speedometer Preview" className="project-image" />
+                      <div className="image-placeholder-text">Project Screenshot</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="project-details">
+                      <h3>Go-Kart Speedometer</h3>
+                      <p className="project-description">
+                        A physical speedometer for a go-kart that displays real-time speed using an Arduino, 
+                        speed sensor, and a mini servo motor.
+                      </p>
+                      <div className="project-tech">Arduino • C++ • Electronics</div>
+                      <div className="project-links">
+                        <a href="#" className="project-link">GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Page 6 - Project 3: Guitar Tuner */}
+      <section id="page-5" className="page-section project-page">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-10">
+              <h2 className="page-title">Guitar Tuner</h2>
+              <div className="project-detail-card">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="project-image-placeholder">
+                      <img src="/guitar-tuner-preview.jpg" alt="Guitar Tuner Preview" className="project-image" />
+                      <div className="image-placeholder-text">Project Screenshot</div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="project-details">
+                      <h3>Guitar Tuner</h3>
+                      <p className="project-description">
+                        An arduino-based guitar tuner that uses a microphone to detect the pitch of guitar strings
+                        and provides real-time feedback to help users tune their instruments accurately.
+                      </p>
+                      <div className="project-tech">Arduino • C++ • Electronics</div>
+                      <div className="project-links">
+                        <a href="#" className="project-link">GitHub</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Page 7 - Contact */}
+      <section id="page-6" className="page-section">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-6 text-center">
@@ -156,13 +258,13 @@ function App() {
               <div className="content-card">
                 <p className="lead">Let's connect and discuss opportunities!</p>
                 <div className="contact-links">
-                  <a href="mailto:isaac@example.com" className="contact-link">
+                  <a href="mailto:isaac@example.com" className="contact-link" target='_blank'>
                     📧 Email
                   </a>
-                  <a href="https://linkedin.com/in/isaac-stobbe" className="contact-link">
+                  <a href="https://linkedin.com/in/isaacstobbe" className="contact-link" target='_blank'>
                     💼 LinkedIn
                   </a>
-                  <a href="https://github.com/isaac-stobbe" className="contact-link">
+                  <a href="https://github.com/stobbeisaac" className="contact-link" target='_blank'>
                     💻 GitHub
                   </a>
                 </div>

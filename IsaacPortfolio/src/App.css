@@ -118,7 +118,13 @@ body {
   background: linear-gradient(135deg, #d2b48c 0%, #8b7355 100%);
 }
 
-#page-3 {
+#page-3,
+#page-4,
+#page-5 {
+  background: linear-gradient(135deg, #3a3a3a 0%, #2c2c2c 100%);
+}
+
+#page-6 {
   background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
 }
 
@@ -149,8 +155,9 @@ body {
 
 .nav-button:hover {
   background: rgba(210, 180, 140, 0.9);
-  color: white;
+  color: #333;
   transform: translateX(-50%) scale(1.1);
+  border-color: #8b7355;
 }
 
 .nav-up {
@@ -202,26 +209,104 @@ body {
 .page-title {
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background: none !important;
-  -webkit-text-fill-color: initial !important;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  background-size: 200% 100%;
+  background-position: 100% 0; /* Start with second color (base color) */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  display: inline-block; /* Only take up space of the text */
+}
+
+.page-title:hover {
+  background-position: 0% 0; /* Move to first color (tan) */
+  transform: scale(1.05);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))
+    drop-shadow(-1px -1px 2px rgba(0, 0, 0, 0.2));
 }
 
 /* Page-specific title colors */
 #page-1 .page-title {
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    90deg,
+    #d2b48c 0%,
+    #d2b48c 50%,
+    white 50%,
+    white 100%
+  ) !important;
+  background-size: 200% 100% !important;
+  background-position: 100% 0 !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+#page-1 .page-title:hover {
+  background-position: 0% 0 !important;
 }
 
 #page-2 .page-title {
-  color: #2c2c2c;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(
+    90deg,
+    #d2b48c 0%,
+    #d2b48c 50%,
+    #2c2c2c 50%,
+    #2c2c2c 100%
+  ) !important;
+  background-size: 200% 100% !important;
+  background-position: 100% 0 !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
 
-#page-3 .page-title {
-  color: #2c2c2c;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+#page-2 .page-title:hover {
+  background-position: 0% 0 !important;
+}
+
+#page-3 .page-title,
+#page-4 .page-title,
+#page-5 .page-title {
+  background: linear-gradient(
+    90deg,
+    #d2b48c 0%,
+    #d2b48c 50%,
+    white 50%,
+    white 100%
+  ) !important;
+  background-size: 200% 100% !important;
+  background-position: 100% 0 !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+#page-3 .page-title:hover,
+#page-4 .page-title:hover,
+#page-5 .page-title:hover {
+  background-position: 0% 0 !important;
+}
+
+#page-6 .page-title {
+  background: linear-gradient(
+    90deg,
+    #d2b48c 0%,
+    #d2b48c 50%,
+    #666666 50%,
+    #666666 100%
+  ) !important;
+  background-size: 200% 100% !important;
+  background-position: 100% 0 !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+#page-6 .page-title:hover {
+  background-position: 0% 0 !important;
 }
 
 /* Content Cards */
@@ -243,7 +328,7 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 .skill-tag {
@@ -301,6 +386,124 @@ body {
 }
 
 /* ========================================
+   PROJECT PAGES
+   ======================================== */
+
+.project-page {
+  background: linear-gradient(135deg, #3a3a3a 0%, #2c2c2c 100%);
+}
+
+.projects-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-summary {
+  background: rgba(210, 180, 140, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #d2b48c;
+}
+
+.project-summary h4 {
+  color: #d2b48c;
+  margin-bottom: 0.5rem;
+}
+
+.project-detail-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-image-placeholder {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid #d2b48c;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.image-placeholder-text {
+  position: absolute;
+  color: #888;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.project-details {
+  padding-left: 2rem;
+}
+
+.project-details h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.project-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.resume-link {
+  display: inline-block;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.resume-title {
+  font-size: 1.5rem;
+  color: #d2b48c;
+  margin: 1rem, 1.5rem;
+}
+
+.project-link,
+.resume-link {
+  background: linear-gradient(45deg, #d2b48c, #f4e4bc);
+  color: #333;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-link:hover,
+.resume-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  color: #4d2e00;
+  text-decoration: none;
+}
+
+/* ========================================
    CONTACT SECTION
    ======================================== */
 
@@ -342,7 +545,8 @@ body {
     font-size: 2rem;
   }
 
-  .content-card {
+  .content-card,
+  .project-detail-card {
     padding: 1.5rem;
     margin: 0 1rem;
   }
@@ -359,5 +563,26 @@ body {
 
   .subtitle {
     font-size: 1rem;
+  }
+
+  .project-details {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .project-image-placeholder {
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .indicator-dot {
+    visibility: hidden;
   }
 }
