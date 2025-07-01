@@ -258,8 +258,8 @@ function App() {
               <div className="content-card">
                 <p className="lead">Let's connect and discuss opportunities!</p>
                 <div className="contact-links">
-                  <a href="mailto:iss.cyclone@gmail.com" className="contact-link" target='_blank'>
-                    📧 Email
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=iss.cyclone@gmail.com&su=Subject&body=Body%20text" className="contact-link" target='_blank' rel='noopener noreferrer'>
+                    📧 Gmail
                   </a>
                   <a href="https://linkedin.com/in/isaacstobbe" className="contact-link" target='_blank'>
                     💼 LinkedIn
