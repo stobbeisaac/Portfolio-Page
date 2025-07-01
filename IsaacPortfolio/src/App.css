@@ -155,8 +155,9 @@ body {
 
 .nav-button:hover {
   background: rgba(210, 180, 140, 0.9);
-  color: white;
+  color: #333;
   transform: translateX(-50%) scale(1.1);
+  border-color: #8b7355;
 }
 
 .nav-up {
