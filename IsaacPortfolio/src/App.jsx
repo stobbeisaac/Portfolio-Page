@@ -70,16 +70,16 @@ function App() {
       </div>
 
       {/* Page 1 - Home/Profile */}
-      <section id="page-0" className="page-section">
+      <section id="page-0" className="page-section home-page">
         <div className="container text-center">
           <div className="row">
             <div className="col">
-              <img src={image} alt="logo" width={350} className="rounded-5 profile-image"></img>
-              <h1></h1>
+              <img src={image} alt="Isaac Stobbe" width={350} className="rounded-5 profile-image"></img>
+              <h1 className="hidden-title"></h1>
             </div>
             <div className="col text-start align-self-center">
-              <h2>Isaac Stobbe</h2>
-              <p>University of Wisconsin - Stout<br></br>Graduate</p>
+              <h1 className="name-title">Isaac Stobbe</h1>
+              <p className="subtitle">University of Wisconsin - Stout<br></br>Graduate</p>
             </div>
           </div>
         </div>
@@ -133,6 +133,11 @@ function App() {
                 </div>
                 <div className="project-card">
                   <h4>Data Visualization Tool</h4>
+                  <p>Interactive charts and graphs for business analytics</p>
+                  <div className="project-tech">Python • D3.js • Flask</div>
+                </div>
+                <div className="project-card">
+                  <h4></h4>
                   <p>Interactive charts and graphs for business analytics</p>
                   <div className="project-tech">Python • D3.js • Flask</div>
                 </div>
