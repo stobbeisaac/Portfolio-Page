@@ -156,13 +156,13 @@ function App() {
               <div className="content-card">
                 <p className="lead">Let's connect and discuss opportunities!</p>
                 <div className="contact-links">
-                  <a href="mailto:isaac@example.com" className="contact-link">
+                  <a href="mailto:isaac@example.com" className="contact-link" target='_blank'>
                     📧 Email
                   </a>
-                  <a href="https://linkedin.com/in/isaac-stobbe" className="contact-link">
+                  <a href="https://linkedin.com/in/isaacstobbe" className="contact-link" target='_blank'>
                     💼 LinkedIn
                   </a>
-                  <a href="https://github.com/isaac-stobbe" className="contact-link">
+                  <a href="https://github.com/stobbeisaac" className="contact-link" target='_blank'>
                     💻 GitHub
                   </a>
                 </div>
