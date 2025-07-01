@@ -1,4 +1,6 @@
 import './App.css'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -259,13 +261,13 @@ function App() {
                 <p className="lead">Let's connect and discuss opportunities!</p>
                 <div className="contact-links">
                   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=iss.cyclone@gmail.com&su=Subject&body=Body%20text" className="contact-link" target='_blank' rel='noopener noreferrer'>
-                    📧 Gmail
+                    <SiGmail /> Gmail
                   </a>
                   <a href="https://linkedin.com/in/isaacstobbe" className="contact-link" target='_blank'>
-                    💼 LinkedIn
+                    <FaLinkedin /> LinkedIn
                   </a>
                   <a href="https://github.com/stobbeisaac" className="contact-link" target='_blank'>
-                    💻 GitHub
+                    <FaGithub /> GitHub
                   </a>
                 </div>
               </div>
