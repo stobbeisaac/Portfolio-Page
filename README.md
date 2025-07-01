@@ -34,7 +34,7 @@ for potential employers or collaborators to learn more about me.
 
 ### Installation
 ```bash
-git clone https://github.com/isaacstobbe/portfolio-page.git
+git clone https://github.com/isaacstobbe/Portfolio-Page.git
 cd portfolio
 npm install
 npm run dev
