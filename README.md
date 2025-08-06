@@ -6,7 +6,7 @@ for potential employers or collaborators to learn more about me.
 
 ---
 
-## 🚀 Live Site {NOT UP YET}
+## 🚀 Live Site
 🌐 [View Portfolio](https://isaacstobbe.com)  
 
 ---
