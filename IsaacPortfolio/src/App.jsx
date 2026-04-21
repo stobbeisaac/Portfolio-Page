@@ -214,29 +214,27 @@ function App() {
         </div>
       </section>
 
-      {/* Page 6 - Project 3: Guitar Tuner */}
+      {/* Page 6 - Project 3: Custom Light Dashboard */}
       <section id="page-5" className="page-section project-page">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-10">
-              <h2 className="page-title">Guitar Tuner</h2>
+              <h2 className="page-title">Custom Light Dashboard</h2>
               <div className="project-detail-card">
                 <div className="row">
                   <div className="col-md-6">
                     <div className="project-image-placeholder">
-                      <img src="/guitar-tuner-preview.jpg" alt="Guitar Tuner Preview" className="project-image" />
+                      <img src="/lightkiosk.jpg" alt="Custom Light Dashboard Preview" className="project-image" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="project-details">
-                      <h3>Guitar Tuner</h3>
+                      <h3>Custom Philips Hue Light Dashboard</h3>
                       <p className="project-description">
-                        An arduino-based guitar tuner that uses a microphone to detect the pitch of guitar strings
-                        and provides real-time feedback to help users tune their instruments accurately.
-                      </p>
-                      <div className="project-tech">Arduino • C++ • Electronics</div>
+                        A custom dashboard using a Raspberry Pi, Zigbee controller, and a beautiful React UI that allows the user to control the HUE lights inside of the room.                 </p>
+                      <div className="project-tech">Raspberry Pi • Zigbee Controller • React • Philips Hue • MQTT</div>
                       <div className="project-links">
-                        <a href="#" className="project-link">GitHub</a>
+                        <a href="https://github.com/stobbeisaac/light-kiosk" className="project-link">GitHub</a>
                       </div>
                     </div>
                   </div>

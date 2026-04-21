@@ -98,13 +98,14 @@ body {
 }
 
 .page-section {
-  min-height: 100vh;
+  height: 100vh;
   scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 2rem 0;
+  overflow-y: auto;
 }
 
 /* ========================================
@@ -574,7 +575,8 @@ body {
 
   .project-details {
     padding-left: 0;
-    margin-top: 2rem;
+    margin-top: 0;
+    padding: 0;
   }
 
   .project-image-placeholder {
@@ -585,6 +587,42 @@ body {
   .project-links {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  /* Mobile: Stack project content vertically */
+  .project-detail-card .row {
+    flex-direction: column;
+  }
+
+  .project-detail-card .col-md-6 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .project-details h3 {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .project-description {
+    margin-top: 0;
+  }
+
+  .project-details {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .project-tech {
+    font-size: 0.8rem;
   }
 }
 
