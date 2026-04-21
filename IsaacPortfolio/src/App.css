@@ -20,7 +20,9 @@
 
 .profile-image:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 0 4px #d2b48c, 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    0 0 0 4px #d2b48c,
+    0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Hidden title for image hover effect */
@@ -33,7 +35,10 @@
   filter: blur(3px);
   opacity: 0;
   transform: translateY(-10px);
-  transition: filter 0.2s ease, opacity 0.5s ease 0.2s, transform 0.3s ease;
+  transition:
+    filter 0.2s ease,
+    opacity 0.5s ease 0.2s,
+    transform 0.3s ease;
 }
 
 /* Isaac Stobbe name with gradient hover effect */
@@ -364,7 +369,9 @@ body {
   text-align: left;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card:hover {
