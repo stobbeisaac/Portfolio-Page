@@ -181,30 +181,30 @@ function App() {
         </div>
       </section>
 
-      {/* Page 5 - Project 2: Go-Kart Speedometer */}
+      {/* Page 5 - Project 2: Up And Down The River Tracker */}
       <section id="page-4" className="page-section project-page">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-10">
-              <h2 className="page-title">Go-Kart Speedometer</h2>
+              <h2 className="page-title">Up And Down The River Tracker</h2>
               <div className="project-detail-card">
                 <div className="row">
                   <div className="col-md-6">
                     <div className="project-image-placeholder">
-                      <img src="/go-kart-speedometer-preview.jpg" alt="Go-Kart Speedometer Preview" className="project-image" />
+                      <img src="/updownriver.jpg" alt="Up And Down The River" className="project-image" />
                       <div className="image-placeholder-text">Project Screenshot</div>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="project-details">
-                      <h3>Go-Kart Speedometer</h3>
+                      <h3>Card Game Tracker</h3>
                       <p className="project-description">
-                        A physical speedometer for a go-kart that displays real-time speed using an Arduino, 
-                        speed sensor, and a mini servo motor.
+                        A web-based card game tracker for the popular game "Up and Down the River". This application allows players to keep track of their scores, rounds, and player information in an intuitive interface. Built with React for the frontend and Node.js for the backend, it provides a seamless experience for players to focus on the game while keeping their scores organized.
                       </p>
-                      <div className="project-tech">Arduino • C++ • Electronics</div>
+                      <div className="project-tech">React • Node.js • JavaScript</div>
                       <div className="project-links">
-                        <a href="#" className="project-link">GitHub</a>
+                        <a href="/Portfolio-Page/UPDownRiver/dist/" className="project-link" target='_blank'>View Project</a>
+                        <a href="https://github.com/stobbeisaac/UpDownTracker" className="project-link" target='_blank'>GitHub</a>
                       </div>
                     </div>
                   </div>
