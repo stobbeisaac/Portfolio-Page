@@ -133,12 +133,12 @@ function App() {
                     <p>Interactive portfolio built with React</p>
                   </div>
                   <div className="project-summary">
-                    <h4>Go-Kart Speedometer</h4>
-                    <p>Real-time speedometer for a go-kart using Arduino and sensors</p>
+                    <h4>Card Game Tracker</h4>
+                    <p>Web-based tracker for the game "Up and Down the River"</p>
                   </div>
                   <div className="project-summary">
-                    <h4>Guitar Tuner</h4>
-                    <p>Real-time guitar tuner using Arduino and a microphone</p>
+                    <h4>Room Lights Dashboard</h4>
+                    <p>Control panel for managing room lighting</p>
                   </div>
                 </div>
               </div>
