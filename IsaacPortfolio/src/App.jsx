@@ -186,7 +186,7 @@ function App() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-10">
-              <h2 className="page-title">Up And Down The River Tracker</h2>
+              <h2 className="page-title">Up And Down The River</h2>
               <div className="project-detail-card">
                 <div className="row">
                   <div className="col-md-6">
@@ -198,7 +198,8 @@ function App() {
                     <div className="project-details">
                       <h3>Card Game Tracker</h3>
                       <p className="project-description">
-                        A web-based card game tracker for the popular game "Up and Down the River". This application allows players to keep track of their scores, rounds, and player information in an intuitive interface. Built with React for the frontend and Node.js for the backend, it provides a seamless experience for players to focus on the game while keeping their scores organized.
+                        A web-based card game tracker for the popular game "Up and Down the River". 
+                        This application allows players to keep track of their scores, rounds, and player information in an intuitive interface. 
                       </p>
                       <div className="project-tech">React • Node.js • JavaScript</div>
                       <div className="project-links">
