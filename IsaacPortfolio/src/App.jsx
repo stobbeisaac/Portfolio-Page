@@ -191,8 +191,7 @@ function App() {
                 <div className="row">
                   <div className="col-md-6">
                     <div className="project-image-placeholder">
-                      <img src="/updownriver.jpg" alt="Up And Down The River" className="project-image" />
-                      <div className="image-placeholder-text">Project Screenshot</div>
+                      <img src="/UpandDownRiver.jpg" alt="Up And Down The River" className="project-image" />
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -203,7 +202,7 @@ function App() {
                       </p>
                       <div className="project-tech">React • Node.js • JavaScript</div>
                       <div className="project-links">
-                        <a href="/Portfolio-Page/UPDownRiver/dist/" className="project-link" target='_blank'>View Project</a>
+                        <a href={`${import.meta.env.BASE_URL}UPDownRiver/dist/index.html`} className="project-link" target='_blank'>View Project</a>
                         <a href="https://github.com/stobbeisaac/UpDownTracker" className="project-link" target='_blank'>GitHub</a>
                       </div>
                     </div>
@@ -226,7 +225,6 @@ function App() {
                   <div className="col-md-6">
                     <div className="project-image-placeholder">
                       <img src="/guitar-tuner-preview.jpg" alt="Guitar Tuner Preview" className="project-image" />
-                      <div className="image-placeholder-text">Project Screenshot</div>
                     </div>
                   </div>
                   <div className="col-md-6">

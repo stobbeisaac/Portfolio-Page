@@ -585,4 +585,8 @@ body {
   .indicator-dot {
     visibility: hidden;
   }
+
+  .nav-button {
+    visibility: hidden;
+  }
 }
